@@ -104,11 +104,11 @@ you should configure [Apache Shiro authentication](https://zeppelin.apache.org/d
 
 With Shiro authentication configured, unauthenticated users cannot view, store
 or execute notes, so they cannot execute code on the server or on other users'
-browsers. Authenticated users remain subject to each note's configured owner,
-reader, writer and runner permissions for operations through Zeppelin's UI,
-REST APIs and WebSocket APIs.
+browsers. Authenticated users remain subject to each note's
+[configured owner, reader, writer and runner permissions](https://zeppelin.apache.org/docs/latest/setup/security/notebook_authorization.html)
+for operations through Zeppelin's UI, REST APIs and WebSocket APIs.
 
-These notebook permissions are application-level access controls, not an OS or
+These note permissions are application-level access controls, not an OS or
 interpreter sandbox. A user who is allowed to run interpreter code can access
 resources available to the interpreter's OS identity, potentially including
 notebook storage and other users' data. Only grant run access to users trusted
